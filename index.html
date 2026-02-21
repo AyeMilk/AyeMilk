@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Reyes | Electrical Engineering Student</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <i class="fas fa-bolt"></i> JR
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links navbar__links--active">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="experience.html" class="navbar__links">Experience</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__btn">
+            <a
+              href="https://discord.com/users/729493119288213605"
+              class="button"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__tag">Electrical Engineering Student</p>
+          <h1 class="hero__title">
+            <span class="hero__name-first">Jason</span>
+            <span class="hero__name-last">Reyes</span>
+          </h1>
+          <p class="hero__description">
+            Electrical Engineering sophomore at George Mason University,
+            interested in circuits, electronics, and real-world problem solving.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              <span>View My Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn--outline">About Me</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__img-wrapper">
+            <img
+              src="images/lightbulb.jpg"
+              alt="Jason Reyes – Electrical Engineering Student"
+              class="hero__img"
+            />
+            <div class="hero__img-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / WHAT I DO -->
+    <section class="projects" id="projects">
+      <div class="projects__container">
+        <div class="section-header">
+          <p class="section-tag">What I Do</p>
+          <h2 class="section-title">My Projects</h2>
+        </div>
+        <div class="projects__grid">
+          <div class="project-card">
+            <div class="project-card__img">
+              <img
+                src="images/GoldenApple-removebg-preview.png"
+                alt="Circuits & Electronics"
+              />
+            </div>
+            <div class="project-card__content">
+              <h3>Circuits &amp; Electronics</h3>
+              <p>
+                Hands-on work with circuits, LEDs, resistors, and
+                oscilloscopes.
+              </p>
+              <a href="#" class="btn btn--small">View details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__img">
+              <img
+                src="images/image_2024-11-28_230231904-removebg-preview.png"
+                alt="Embedded & Programming"
+              />
+            </div>
+            <div class="project-card__content">
+              <h3>Embedded &amp; Programming</h3>
+              <p>
+                Basic microcontroller systems and intro-level coding for
+                hardware.
+              </p>
+              <a href="#" class="btn btn--small">View details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / ABOUT / CONTACT -->
+    <footer class="footer" id="about">
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="/" class="footer__logo">
+              <i class="fas fa-bolt"></i> JR
+            </a>
+            <p class="footer__brand-text">
+              Electrical Engineering sophomore at George Mason University working
+              toward a bachelor's degree and a career in electrical engineering.
+            </p>
+          </div>
+
+          <div class="footer__links-grid">
+            <div class="footer__link-group">
+              <h3>Quick Links</h3>
+              <a href="#projects">Projects</a>
+              <a href="/experience.html">Experience</a>
+              <a href="/">Coursework</a>
+              <a href="/">Resume</a>
+            </div>
+
+            <div class="footer__link-group">
+              <h3>Contact Me</h3>
+              <a href="mailto:youremail@example.com">Email</a>
+              <a href="/">LinkedIn</a>
+              <a
+                href="https://discord.com/users/729493119288213605"
+                >Discord</a
+              >
+            </div>
+
+            <div class="footer__link-group">
+              <h3>Social</h3>
+              <a href="/">Instagram</a>
+              <a href="/">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; Jason Reyes <span id="year"></span>. All Rights Reserved
+          </p>
+          <div class="footer__socials">
+            <a href="/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="/" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:youremail@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
