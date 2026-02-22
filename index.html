@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jason Reyes | Electrical Engineering Student</title>
+    <title>Jason Reyes | Infrastructure & Electrical Engineering</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="/" id="navbar__logo">
-          <i class="fas fa-bolt"></i> JR
+        <a href="index.html" id="navbar__logo">
+          <span class="logo-bracket">[</span>JR<span class="logo-bracket">]</span>
+          <span class="logo-blink">_</span>
         </a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -24,155 +23,203 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html" class="navbar__links navbar__links--active">Home</a>
+            <a href="index.html" class="navbar__links navbar__links--active">
+              <span class="nav-index">01</span> Home
+            </a>
           </li>
           <li class="navbar__item">
-            <a href="experience.html" class="navbar__links">Experience</a>
+            <a href="experience.html" class="navbar__links">
+              <span class="nav-index">02</span> Experience
+            </a>
           </li>
           <li class="navbar__item">
-            <a href="#projects" class="navbar__links">Projects</a>
+            <a href="#projects" class="navbar__links">
+              <span class="nav-index">03</span> Projects
+            </a>
           </li>
           <li class="navbar__btn">
-            <a
-              href="https://discord.com/users/729493119288213605"
-              class="button"
-            >
-              Contact
+            <a href="https://discord.com/users/729493119288213605" class="button">
+              <i class="fas fa-terminal"></i> Contact
             </a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
+      <div class="pcb-grid"></div>
       <div class="hero__container">
         <div class="hero__content">
-          <p class="hero__tag">Electrical Engineering Student</p>
+          <div class="hero__status">
+            <span class="status-dot"></span>
+            <span class="status-text">AVAILABLE FOR INTERNSHIPS</span>
+          </div>
           <h1 class="hero__title">
             <span class="hero__name-first">Jason</span>
             <span class="hero__name-last">Reyes</span>
           </h1>
+          <div class="hero__tagline">
+            <span class="tagline-label">ROLE</span>
+            <span class="tagline-pipe">|</span>
+            <span class="tagline-value">Electrical Engineering · Infrastructure · Embedded Systems</span>
+          </div>
           <p class="hero__description">
-            Electrical Engineering sophomore at George Mason University,
-            interested in circuits, electronics, and real-world problem solving.
+            EE sophomore at George Mason University. Former rack relocation technician 
+            at <strong>AWS data centers</strong>. I build circuits, program microcontrollers, 
+            and work where software meets hardware.
           </p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">
-              <span>View My Projects</span>
+              <span>View Projects</span>
               <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#about" class="btn btn--outline">About Me</a>
+            <a href="/experience.html" class="btn btn--ghost">
+              <i class="fas fa-file-alt"></i>
+              <span>Full Resume</span>
+            </a>
+          </div>
+          <div class="hero__meta">
+            <div class="meta-item">
+              <span class="meta-label">LOC</span>
+              <span class="meta-value">Virginia, US</span>
+            </div>
+            <div class="meta-sep"></div>
+            <div class="meta-item">
+              <span class="meta-label">EDU</span>
+              <span class="meta-value">George Mason '28</span>
+            </div>
+            <div class="meta-sep"></div>
+            <div class="meta-item">
+              <span class="meta-label">PREV</span>
+              <span class="meta-value">AWS</span>
+            </div>
           </div>
         </div>
         <div class="hero__visual">
-          <div class="hero__img-wrapper">
-            <img
-              src="images/lightbulb.jpg"
-              alt="Jason Reyes – Electrical Engineering Student"
-              class="hero__img"
-            />
-            <div class="hero__img-glow"></div>
+          <div class="hero__img-frame">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--tr"></div>
+            <div class="frame-corner frame-corner--bl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <img src="images/lightbulb.jpg" alt="Jason Reyes" class="hero__img" />
+            <div class="frame-label">MAIN_IMG.jpg</div>
           </div>
+          <div class="hero__img-glow"></div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS / WHAT I DO -->
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
       <div class="projects__container">
         <div class="section-header">
-          <p class="section-tag">What I Do</p>
-          <h2 class="section-title">My Projects</h2>
+          <span class="section-index">03 //</span>
+          <h2 class="section-title">Active Projects</h2>
+          <div class="section-line"></div>
         </div>
         <div class="projects__grid">
-          <div class="project-card">
+          <a class="project-card" href="#">
             <div class="project-card__img">
-              <img
-                src="images/GoldenApple-removebg-preview.png"
-                alt="Circuits & Electronics"
-              />
+              <img src="images/GoldenApple-removebg-preview.png" alt="Circuits & Electronics" />
             </div>
             <div class="project-card__content">
-              <h3>Circuits &amp; Electronics</h3>
-              <p>
-                Hands-on work with circuits, LEDs, resistors, and
-                oscilloscopes.
-              </p>
-              <a href="#" class="btn btn--small">View details <i class="fas fa-arrow-right"></i></a>
+              <div class="project-card__meta">
+                <span class="project-tag">HARDWARE</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3>Circuits & Electronics</h3>
+              <p>Hands-on DC/AC circuits, oscilloscope measurements, Kirchhoff's laws, Thevenin/Norton analysis.</p>
+              <span class="project-link">View details <i class="fas fa-arrow-right"></i></span>
             </div>
-          </div>
-          <div class="project-card">
+          </a>
+          <a class="project-card" href="#">
             <div class="project-card__img">
-              <img
-                src="images/image_2024-11-28_230231904-removebg-preview.png"
-                alt="Embedded & Programming"
-              />
+              <img src="images/image_2024-11-28_230231904-removebg-preview.png" alt="Embedded Systems" />
             </div>
             <div class="project-card__content">
-              <h3>Embedded &amp; Programming</h3>
-              <p>
-                Basic microcontroller systems and intro-level coding for
-                hardware.
-              </p>
-              <a href="#" class="btn btn--small">View details <i class="fas fa-arrow-right"></i></a>
+              <div class="project-card__meta">
+                <span class="project-tag">EMBEDDED</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3>Arduino & Microcontrollers</h3>
+              <p>C/C++ on Arduino, LED/sensor control, breadboard prototyping, embedded I/O systems.</p>
+              <span class="project-link">View details <i class="fas fa-arrow-right"></i></span>
             </div>
-          </div>
+          </a>
+          <a class="project-card" href="#">
+            <div class="project-card__img project-card__img--icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-tag">ENERGY</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3>Renewable Energy Sim</h3>
+              <p>Small-scale wind turbine modeling, power output analysis, prototype windmill testing.</p>
+              <span class="project-link">View details <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER / ABOUT / CONTACT -->
+    <!-- STACK STRIP -->
+    <section class="stack-strip">
+      <div class="stack-strip__inner">
+        <span>Python</span><span class="stack-dot">·</span>
+        <span>C/C++</span><span class="stack-dot">·</span>
+        <span>JavaScript</span><span class="stack-dot">·</span>
+        <span>HTML/CSS</span><span class="stack-dot">·</span>
+        <span>Git</span><span class="stack-dot">·</span>
+        <span>Linux</span><span class="stack-dot">·</span>
+        <span>AutoCAD</span><span class="stack-dot">·</span>
+        <span>SQL</span><span class="stack-dot">·</span>
+        <span>Oscilloscopes</span><span class="stack-dot">·</span>
+        <span>Soldering</span><span class="stack-dot">·</span>
+        <span>Circuit Analysis</span><span class="stack-dot">·</span>
+        <span>Function Generators</span>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer" id="about">
       <div class="footer__container">
         <div class="footer__top">
           <div class="footer__brand">
             <a href="/" class="footer__logo">
-              <i class="fas fa-bolt"></i> JR
+              <span class="logo-bracket">[</span>JR<span class="logo-bracket">]</span>
             </a>
             <p class="footer__brand-text">
-              Electrical Engineering sophomore at George Mason University working
-              toward a bachelor's degree and a career in electrical engineering.
+              Electrical Engineering sophomore at George Mason University. 
+              Building toward a career at the intersection of hardware, 
+              infrastructure, and embedded systems.
             </p>
           </div>
-
           <div class="footer__links-grid">
             <div class="footer__link-group">
-              <h3>Quick Links</h3>
+              <h3>Navigate</h3>
               <a href="#projects">Projects</a>
               <a href="/experience.html">Experience</a>
               <a href="/">Coursework</a>
-              <a href="/">Resume</a>
             </div>
-
             <div class="footer__link-group">
-              <h3>Contact Me</h3>
-              <a href="mailto:youremail@example.com">Email</a>
+              <h3>Connect</h3>
+              <a href="mailto:jasonbenitez9958@gmail.com">Email</a>
               <a href="/">LinkedIn</a>
-              <a
-                href="https://discord.com/users/729493119288213605"
-                >Discord</a
-              >
-            </div>
-
-            <div class="footer__link-group">
-              <h3>Social</h3>
-              <a href="/">Instagram</a>
+              <a href="https://discord.com/users/729493119288213605">Discord</a>
               <a href="/">GitHub</a>
             </div>
           </div>
         </div>
-
         <div class="footer__bottom">
-          <p class="footer__copyright">
-            &copy; Jason Reyes <span id="year"></span>. All Rights Reserved
-          </p>
+          <p class="footer__copyright">&copy; Jason Reyes <span id="year"></span></p>
           <div class="footer__socials">
-            <a href="/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="/" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="/" aria-label="Discord"><i class="fab fa-discord"></i></a>
-            <a href="/" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:youremail@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:jasonbenitez9958@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
