@@ -102,7 +102,7 @@
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   color: var(--text-2);
 }
 
@@ -265,7 +265,7 @@
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   padding: 0.15rem 0.5rem;
   background: var(--accent-dim);
   color: var(--accent);
@@ -316,7 +316,7 @@
   font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   color: var(--text-2);
   display: block;
   margin-bottom: 0.6rem;
@@ -380,7 +380,7 @@
   font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--text-0);
   flex: 1;
 }
@@ -389,7 +389,7 @@
   font-size: 0.55rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   color: var(--green);
   background: var(--green-dim);
   padding: 0.2rem 0.45rem;
