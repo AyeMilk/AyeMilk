@@ -177,7 +177,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-weight: 600;
   font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
 
@@ -269,7 +269,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-weight: 600;
   font-size: 0.82rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   padding: 0.75rem 1.6rem;
   border-radius: var(--radius);
   border: none;
@@ -374,7 +374,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--green);
 }
 
@@ -425,7 +425,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: var(--text-2);
   background: var(--bg-card);
   padding: 0.2rem 0.5rem;
@@ -492,7 +492,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: var(--text-2);
 }
 
@@ -646,7 +646,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--accent);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   flex-shrink: 0;
 }
 
@@ -695,7 +695,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
-  cursor: pointer;
+  cursor: default;
 }
 
 .project-card:hover {
@@ -773,7 +773,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--accent);
   background: var(--accent-dim);
   padding: 0.25rem 0.6rem;
@@ -843,7 +843,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-weight: 500;
   color: var(--text-2);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .stack-strip__inner span:not(.stack-dot) {
@@ -914,7 +914,7 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: var(--text-2);
   margin-bottom: 1rem;
 }
