@@ -389,25 +389,25 @@ img { display: block; max-width: 100%; height: auto; }
 .hero__name-first {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
   font-weight: 800;
   background: var(--gradient-warm);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .hero__name-last {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
   font-weight: 800;
   background: var(--gradient-cool);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 /* Tagline bar */
