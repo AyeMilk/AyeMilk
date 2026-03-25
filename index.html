@@ -55,71 +55,73 @@
     <section class="hero">
       <div class="pcb-grid"></div>
       <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__terminal" aria-hidden="true">
-        <div class="hero__terminal-bar">
-          <span class="t-dot t-dot--red"></span>
-          <span class="t-dot t-dot--yellow"></span>
-          <span class="t-dot t-dot--green"></span>
-          <span class="hero__terminal-title">profile.sh</span>
+      <div class="hero__layout">
+        <div class="hero__container">
+          <div class="hero__content">
+            <div class="hero__status">
+              <span class="status-dot"></span>
+              <span class="status-text">AVAILABLE FOR INTERNSHIPS</span>
+            </div>
+            <h1 class="hero__title">
+              <span class="hero__name-first">Jason</span>
+              <span class="hero__name-last">Reyes</span>
+            </h1>
+            <div class="hero__tagline">
+              <span class="tagline-label">ROLE</span>
+              <span class="tagline-pipe">|</span>
+              <span class="tagline-value">Electrical Engineering · Infrastructure · Embedded Systems</span>
+            </div>
+            <p class="hero__description">
+              EE sophomore at George Mason University. Former rack relocation technician
+              at <strong>AWS data centers</strong>. I build circuits, program microcontrollers,
+              and work where software meets hardware.
+            </p>
+            <div class="hero__actions">
+              <a href="projects.html" class="btn btn--primary">
+                <span>View Projects</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="JasonReyesResumeepdf.pdf" target="_blank" class="btn btn--ghost">
+                <i class="fas fa-file-alt"></i>
+                <span>Full Resume</span>
+              </a>
+            </div>
+            <div class="hero__meta">
+              <div class="meta-item">
+                <span class="meta-label">LOC</span>
+                <span class="meta-value">Virginia, US</span>
+              </div>
+              <div class="meta-sep"></div>
+              <div class="meta-item">
+                <span class="meta-label">EDU</span>
+                <span class="meta-value">George Mason '28</span>
+              </div>
+              <div class="meta-sep"></div>
+              <div class="meta-item">
+                <span class="meta-label">PREV</span>
+                <span class="meta-value">AWS</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero__terminal-body">
-          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
-          <div class="t-line t-out">jason_reyes</div>
-          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></div>
-          <div class="t-line t-out">Electrical Engineer</div>
-          <div class="t-line t-out">Infrastructure · Embedded Systems</div>
-          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">status --check</span></div>
-          <div class="t-line t-out t-green">● AVAILABLE FOR INTERNSHIPS</div>
-          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">uptime</span></div>
-          <div class="t-line t-out">GMU '28 · Virginia, US</div>
-          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cursor">▋</span></div>
-        </div>
-      </div>
-      <div class="hero__container">
-        <div class="hero__content">
-          <div class="hero__status">
-            <span class="status-dot"></span>
-            <span class="status-text">AVAILABLE FOR INTERNSHIPS</span>
+        <div class="hero__terminal" aria-hidden="true">
+          <div class="hero__terminal-bar">
+            <span class="t-dot t-dot--red"></span>
+            <span class="t-dot t-dot--yellow"></span>
+            <span class="t-dot t-dot--green"></span>
+            <span class="hero__terminal-title">profile.sh</span>
           </div>
-          <h1 class="hero__title">
-            <span class="hero__name-first">Jason</span>
-            <span class="hero__name-last">Reyes</span>
-          </h1>
-          <div class="hero__tagline">
-            <span class="tagline-label">ROLE</span>
-            <span class="tagline-pipe">|</span>
-            <span class="tagline-value">Electrical Engineering · Infrastructure · Embedded Systems</span>
-          </div>
-          <p class="hero__description">
-            EE sophomore at George Mason University. Former rack relocation technician 
-            at <strong>AWS data centers</strong>. I build circuits, program microcontrollers, 
-            and work where software meets hardware.
-          </p>
-          <div class="hero__actions">
-            <a href="projects.html" class="btn btn--primary">
-              <span>View Projects</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="/experience.html" class="btn btn--ghost">
-              <i class="fas fa-file-alt"></i>
-              <span>Full Resume</span>
-            </a>
-          </div>
-          <div class="hero__meta">
-            <div class="meta-item">
-              <span class="meta-label">LOC</span>
-              <span class="meta-value">Virginia, US</span>
-            </div>
-            <div class="meta-sep"></div>
-            <div class="meta-item">
-              <span class="meta-label">EDU</span>
-              <span class="meta-value">George Mason '28</span>
-            </div>
-            <div class="meta-sep"></div>
-            <div class="meta-item">
-              <span class="meta-label">PREV</span>
-              <span class="meta-value">AWS</span>
-            </div>
+          <div class="hero__terminal-body">
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+            <div class="t-line t-out">jason_reyes</div>
+            <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></div>
+            <div class="t-line t-out">Electrical Engineer</div>
+            <div class="t-line t-out">Infrastructure · Embedded Systems</div>
+            <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">status --check</span></div>
+            <div class="t-line t-out t-green">● AVAILABLE FOR INTERNSHIPS</div>
+            <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">uptime</span></div>
+            <div class="t-line t-out">GMU '28 · Virginia, US</div>
+            <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cursor">▋</span></div>
           </div>
         </div>
       </div>
