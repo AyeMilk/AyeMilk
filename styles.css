@@ -323,20 +323,20 @@ img { display: block; max-width: 100%; height: auto; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.09) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, black 0%, transparent 72%);
   -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, black 0%, transparent 72%);
-  opacity: 0.65;
+  opacity: 0.8;
   pointer-events: none;
 }
 
 /* Grid wrapper — balances content and terminal as true columns */
 .hero__layout {
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: 1fr 320px;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
   align-items: center;
   max-width: 1140px;
   width: 100%;
@@ -359,7 +359,7 @@ img { display: block; max-width: 100%; height: auto; }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.5rem;
   opacity: 0;
   animation: fadeUp 0.5s 0.1s forwards;
 }
@@ -390,7 +390,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* Title */
 .hero__title {
   margin-bottom: 0.9rem;
-  line-height: 0.92;
+  line-height: 0.88;
   position: relative;
   opacity: 0;
   animation: fadeUp 0.6s 0.2s forwards;
@@ -400,8 +400,8 @@ img { display: block; max-width: 100%; height: auto; }
   content: '';
   position: absolute;
   inset: -30px -60px;
-  background: radial-gradient(ellipse at center, rgba(247, 112, 98, 0.1) 0%, transparent 70%);
-  filter: blur(24px);
+  background: radial-gradient(ellipse at center, rgba(247, 112, 98, 0.15) 0%, transparent 70%);
+  filter: blur(28px);
   z-index: -1;
   pointer-events: none;
 }
@@ -481,7 +481,7 @@ img { display: block; max-width: 100%; height: auto; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.1rem;
   opacity: 0;
   animation: fadeUp 0.5s 0.5s forwards;
 }
@@ -550,17 +550,19 @@ img { display: block; max-width: 100%; height: auto; }
 /* Hero terminal panel */
 .hero__terminal {
   width: 100%;
-  background: rgba(14, 14, 18, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(14, 14, 18, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  opacity: 0.7;
-  backdrop-filter: blur(12px);
+  opacity: 0.95;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   pointer-events: none;
   box-shadow:
-    0 0 0 1px rgba(247, 112, 98, 0.05),
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    0 0 40px rgba(247, 112, 98, 0.06);
+    0 0 0 1px rgba(247, 112, 98, 0.08),
+    0 8px 40px rgba(0, 0, 0, 0.55),
+    0 0 60px rgba(247, 112, 98, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .hero__terminal-bar {
