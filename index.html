@@ -54,6 +54,27 @@
     <!-- HERO -->
     <section class="hero">
       <div class="pcb-grid"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__terminal" aria-hidden="true">
+        <div class="hero__terminal-bar">
+          <span class="t-dot t-dot--red"></span>
+          <span class="t-dot t-dot--yellow"></span>
+          <span class="t-dot t-dot--green"></span>
+          <span class="hero__terminal-title">profile.sh</span>
+        </div>
+        <div class="hero__terminal-body">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+          <div class="t-line t-out">jason_reyes</div>
+          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></div>
+          <div class="t-line t-out">Electrical Engineer</div>
+          <div class="t-line t-out">Infrastructure · Embedded Systems</div>
+          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">status --check</span></div>
+          <div class="t-line t-out t-green">● AVAILABLE FOR INTERNSHIPS</div>
+          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">uptime</span></div>
+          <div class="t-line t-out">GMU '28 · Virginia, US</div>
+          <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cursor">▋</span></div>
+        </div>
+      </div>
       <div class="hero__container">
         <div class="hero__content">
           <div class="hero__status">
@@ -100,16 +121,6 @@
               <span class="meta-value">AWS</span>
             </div>
           </div>
-        </div>
-        <div class="hero__visual">
-          <div class="hero__img-frame">
-            <div class="frame-corner frame-corner--tl"></div>
-            <div class="frame-corner frame-corner--tr"></div>
-            <div class="frame-corner frame-corner--bl"></div>
-            <div class="frame-corner frame-corner--br"></div>
-            <img src="images/lightbulb.jpg" alt="Jason Reyes" class="hero__img" />
-          </div>
-          <div class="hero__img-glow"></div>
         </div>
       </div>
     </section>
