@@ -130,7 +130,7 @@ img { display: block; max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 0.15rem;
+  gap: 0.4rem;
 }
 
 .navbar__item { display: flex; align-items: center; }
@@ -162,7 +162,7 @@ img { display: block; max-width: 100%; height: auto; }
 .navbar__btn {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
 }
 
 .button {
@@ -904,12 +904,12 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .project-card:hover {
-  transform: translateY(-4px) scale(1.025);
+  transform: translateY(-3px) scale(1.015);
   border-color: var(--border-hover);
   box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(247, 112, 98, 0.08),
-    0 0 30px rgba(247, 112, 98, 0.06);
+    0 10px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(247, 112, 98, 0.07),
+    0 0 20px rgba(247, 112, 98, 0.05);
 }
 
 .project-card__img {
