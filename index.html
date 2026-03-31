@@ -115,7 +115,7 @@
             <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">status --check</span></div>
             <div class="t-line t-out t-green">● AVAILABLE FOR INTERNSHIPS</div>
             <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cmd">uptime</span></div>
-            <div class="t-line t-out">GMU '28 · Virginia, US</div>
+            <div class="t-line t-out" id="uptime"></div>
             <div class="t-line t-gap"><span class="t-prompt">$</span> <span class="t-cursor">▋</span></div>
           </div>
         </div>
@@ -313,6 +313,22 @@
     <script>
       const yearSpan = document.getElementById("year");
       if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+      // Live uptime timer
+      const SITE_START = new Date('2026-03-31T12:00:00');
+
+      function updateUptime() {
+        const diff = Math.max(0, Math.floor((Date.now() - SITE_START) / 1000));
+        const d = Math.floor(diff / 86400);
+        const h = Math.floor((diff % 86400) / 3600);
+        const m = Math.floor((diff % 3600) / 60);
+        const s = diff % 60;
+        const el = document.getElementById('uptime');
+        if (el) el.textContent = `UPTIME: ${d}d ${h}h ${m}m ${s}s`;
+      }
+
+      updateUptime();
+      setInterval(updateUptime, 1000);
     </script>
   </body>
 </html>
