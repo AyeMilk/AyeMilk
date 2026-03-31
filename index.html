@@ -314,8 +314,8 @@
       const yearSpan = document.getElementById("year");
       if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-      // Live uptime timer — starts 11 minutes before page load
-      const SITE_START = new Date(Date.now() - 11 * 60 * 1000);
+      // Live uptime timer — fixed global start, never resets
+      const SITE_START = new Date("2026-03-31T12:00:00");
 
       function updateUptime() {
         const diff = Math.max(0, Math.floor((Date.now() - SITE_START) / 1000));
