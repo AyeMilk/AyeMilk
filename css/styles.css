@@ -21,7 +21,7 @@
 
   --text-0: #eeeef0;
   --text-1: #a8a8b8;
-  --text-2: #65657a;
+  --text-2: #7c7c8f;
 
   --accent: #f77062;
   --accent-dim: rgba(247, 112, 98, 0.12);
@@ -63,16 +63,6 @@ body {
 
 a { text-decoration: none; color: inherit; }
 img { display: block; max-width: 100%; height: auto; }
-
-::selection {
-  background: var(--accent-dim);
-  color: var(--accent);
-}
-
-/* scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-0); }
-::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 3px; }
 
 /* ═══════════════════════════════════════
    NAVBAR
@@ -905,7 +895,8 @@ img { display: block; max-width: 100%; height: auto; }
   box-shadow:
     0 10px 32px rgba(0, 0, 0, 0.35),
     0 0 0 1px rgba(247, 112, 98, 0.07),
-    0 0 20px rgba(247, 112, 98, 0.05);
+    0 0 20px rgba(247, 112, 98, 0.05),
+    inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 .project-card__img {
@@ -1343,4 +1334,43 @@ img { display: block; max-width: 100%; height: auto; }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══ SHARPEN — craft, depth & finish ═══ */
+
+/* Brand-colored text selection */
+::selection      { background: rgba(247,112,98,0.28); color:#fff; }
+::-moz-selection { background: rgba(247,112,98,0.28); color:#fff; }
+
+/* Themed scrollbar */
+html { scrollbar-width: thin; scrollbar-color: #26262e #0b0b0e; }
+::-webkit-scrollbar { width:12px; height:12px; }
+::-webkit-scrollbar-track { background:#0b0b0e; }
+::-webkit-scrollbar-thumb { background:#26262e; border:3px solid #0b0b0e; border-radius:10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Visible keyboard focus (accessibility + craft) */
+:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+:focus:not(:focus-visible) { outline:none; }
+
+/* Respect users who ask for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+/* Cards catch a hint of top light — depth without new decoration */
+.entry__body, .sys-card, .proj-entry, .project-card, .stat-block {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* Subtle film grain to kill the flat-dark feel */
+body::after {
+  content:''; position:fixed; inset:0; z-index:9999;
+  pointer-events:none; opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
