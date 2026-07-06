@@ -1,36 +1,31 @@
-const menuBtn = document.querySelector('#mobile-menu');
-const navMenu = document.querySelector('.navbar__menu');
+// Mobile sheet-index toggle
+const menuBtn = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('sheet-nav');
 
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('is-active');
-  navMenu.classList.toggle('active');
-});
-
-// Close menu when a link is clicked
-document.querySelectorAll('.navbar__links').forEach(link => {
-  link.addEventListener('click', () => {
-    menuBtn.classList.remove('is-active');
-    navMenu.classList.remove('active');
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('is-open');
+    menuBtn.classList.toggle('is-active', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
   });
-});
 
-// Close menu on escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    menuBtn.classList.remove('is-active');
-    navMenu.classList.remove('active');
-    closeContactModal();
-  }
-});
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('is-open');
+      menuBtn.classList.remove('is-active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
-// Contact modal
-const contactBtn = document.getElementById('contact-btn');
+// RFI modal (contact)
 const contactModal = document.getElementById('contact-modal');
 const contactModalClose = document.getElementById('contact-modal-close');
 
 function openContactModal() {
   contactModal.classList.add('is-open');
   document.body.style.overflow = 'hidden';
+  contactModalClose.focus();
 }
 
 function closeContactModal() {
@@ -38,12 +33,12 @@ function closeContactModal() {
   document.body.style.overflow = '';
 }
 
-if (contactBtn) {
-  contactBtn.addEventListener('click', (e) => {
+document.querySelectorAll('#contact-btn, .rfi-open').forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
     e.preventDefault();
     openContactModal();
   });
-}
+});
 
 if (contactModalClose) {
   contactModalClose.addEventListener('click', closeContactModal);
@@ -54,3 +49,16 @@ if (contactModal) {
     if (e.target === contactModal) closeContactModal();
   });
 }
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (navMenu) {
+      navMenu.classList.remove('is-open');
+      if (menuBtn) {
+        menuBtn.classList.remove('is-active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+    if (contactModal) closeContactModal();
+  }
+});

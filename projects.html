@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jason Reyes | Projects</title>
+    <title>Jason Reyes | Project Log</title>
     <meta name="description" content="Jason Reyes — Electrical Engineering sophomore at George Mason University. Hardware builds, embedded systems, energy, and software projects from labs, hackathons, and personal exploration." />
     <meta name="author" content="Jason Reyes" />
-    <meta name="theme-color" content="#08080a" />
+    <meta name="theme-color" content="#131619" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jasonreyes.cc/projects.html" />
-    <meta property="og:title" content="Jason Reyes | Projects" />
+    <meta property="og:title" content="Jason Reyes | Project Log" />
     <meta property="og:description" content="Hardware builds, embedded systems, energy modeling, and software — projects from labs, hackathons, and personal exploration." />
     <meta property="og:image" content="https://jasonreyes.cc/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Jason Reyes — Electrical Engineering & Infrastructure" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jason Reyes | Projects" />
+    <meta name="twitter:title" content="Jason Reyes | Project Log" />
     <meta name="twitter:description" content="Hardware builds, embedded systems, energy modeling, and software projects." />
     <meta name="twitter:image" content="https://jasonreyes.cc/og-image.png" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -29,86 +28,60 @@
   </head>
   <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="index.html" id="navbar__logo">
-          <span class="logo-bracket">[</span>JR<span class="logo-bracket">]</span>
-          <span class="logo-blink">_</span>
-        </a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">
-              <span class="nav-index">01</span> Home
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="experience.html" class="navbar__links">
-              <span class="nav-index">02</span> Experience
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="projects.html" class="navbar__links navbar__links--active">
-              <span class="nav-index">03</span> Projects
-            </a>
-          </li>
-          <li class="navbar__btn">
-            <a href="#" class="button" id="contact-btn">
-              <i class="fas fa-terminal"></i> Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="sheet">
+      <div class="ruler" aria-hidden="true"></div>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-      <div class="pcb-grid"></div>
-      <div class="page-header__container">
-        <div class="page-header__breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="breadcrumb-sep">/</span>
-          <span class="breadcrumb-current">projects.log</span>
-        </div>
-        <h1 class="page-header__title">Project Log</h1>
-        <p class="page-header__sub">
-          Hardware builds, embedded systems, and engineering projects.
+      <!-- SHEETBAR -->
+      <header class="sheetbar">
+        <a href="index.html" class="sheetbar__id">JASON REYES <small>PERSONAL DOMAIN · JASONREYES.CC</small></a>
+        <button class="sheetbar__toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="sheetbar__nav" id="sheet-nav" aria-label="Sheet index">
+          <a href="index.html" class="navbar__links"><span>E-101</span>Home</a>
+          <a href="experience.html" class="navbar__links"><span>E-201</span>Experience</a>
+          <a href="projects.html" class="navbar__links is-current"><span>E-301</span>Project Log</a>
+          <a href="#" class="navbar__links" id="contact-btn"><span>RFI</span>Contact</a>
+        </nav>
+      </header>
+
+      <!-- PAGE HEADER -->
+      <section class="pagehead">
+        <p class="pagehead__eyebrow">SHEET E-301 · DETAIL SHEETS · <b>DRAWN BY JR</b></p>
+        <h1>Project Log</h1>
+        <p class="pagehead__sub">
+          Hands-on work across hardware, energy, and software — built in labs,
+          hackathons, and personal exploration. Each entry documented as a detail.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- PROJECTS GRID -->
-    <section class="projects-page">
-      <div class="projects-page__container">
+      <!-- DETAILS -->
+      <section class="section">
+        <div class="details">
 
-        <p class="projects-page__intro">Hands-on work across hardware, embedded systems, energy, and software — built in labs, hackathons, and personal exploration.</p>
-
-        <div class="projects-page__group">
-          <div class="section-header">
-            <span class="section-index">01 //</span>
-            <h2 class="section-title">Hardware</h2>
-            <div class="section-line"></div>
-          </div>
-          <div class="projects__grid">
-
-            <div class="project-card project-card--full">
-              <div class="project-card__img">
+          <!-- DETAIL 01 -->
+          <article class="detail">
+            <div class="detail__strip">
+              <b>DETAIL 01 · HARDWARE</b>
+              <span>2025 · BENCH-VERIFIED</span>
+            </div>
+            <div class="detail__body">
+              <figure class="detail__fig">
                 <img src="images/proj-traffic-logic.png" alt="Schematic of a traffic-light logic circuit driven by binary inputs and an AND gate" />
-              </div>
-              <div class="project-card__content">
-                <div class="project-card__meta">
-                  <span class="project-tag">HARDWARE</span>
-                  <span class="project-year">2025</span>
-                </div>
-                <h3>Traffic-Light Logic Circuit</h3>
-                <p>Built a stoplight controller from discrete components — three logic gates decoding binary switch positions into the correct light output. A hands-on look at how binary logic maps to real-world control, breadboarded and verified on the bench.</p>
-                <p class="project-card__impact">Combinational logic — binary switch inputs decoded into traffic-light states.</p>
-                <div class="project-card__tags">
+                <figcaption>FIG. 1 — LOGIC SCHEMATIC · N.T.S.</figcaption>
+              </figure>
+              <div class="detail__content">
+                <h2 class="detail__title">Traffic-Light Logic Circuit</h2>
+                <p class="detail__desc">
+                  A stoplight controller built from discrete components — three logic gates
+                  decoding binary switch positions into the correct light output. A hands-on
+                  look at how binary logic maps to real-world control, breadboarded and
+                  verified on the bench.
+                </p>
+                <p class="detail__impact">Combinational logic — binary switch inputs decoded into traffic-light states</p>
+                <div class="detail__tags">
                   <span>Digital Logic</span>
                   <span>Logic Gates</span>
                   <span>Breadboarding</span>
@@ -116,31 +89,29 @@
                 </div>
               </div>
             </div>
+          </article>
 
-          </div>
-        </div>
-
-        <div class="projects-page__group">
-          <div class="section-header">
-            <span class="section-index">03 //</span>
-            <h2 class="section-title">Energy</h2>
-            <div class="section-line"></div>
-          </div>
-          <div class="projects__grid">
-
-            <div class="project-card project-card--full">
-              <div class="project-card__img">
+          <!-- DETAIL 02 -->
+          <article class="detail">
+            <div class="detail__strip">
+              <b>DETAIL 02 · ENERGY</b>
+              <span>2025 · 3.7V GENERATED</span>
+            </div>
+            <div class="detail__body">
+              <figure class="detail__fig">
                 <img src="images/proj-solar-wind.png" alt="Solar panel and wind turbine feeding a 3.7-volt readout" />
-              </div>
-              <div class="project-card__content">
-                <div class="project-card__meta">
-                  <span class="project-tag">ENERGY</span>
-                  <span class="project-year">2025</span>
-                </div>
-                <h3>Solar & Wind Energy Harvester</h3>
-                <p>A small-scale energy rig pulling power from both solar and a homemade wind turbine — the turbine built from a cereal box — generating around 3.7V. Outputs feed a capacitor circuit that stores and smooths the generated DC. A scrappy, hands-on energy-harvesting experiment.</p>
-                <p class="project-card__impact">Harvesting and storing DC from two renewable sources.</p>
-                <div class="project-card__tags">
+                <figcaption>FIG. 2 — DUAL-SOURCE HARVESTER · N.T.S.</figcaption>
+              </figure>
+              <div class="detail__content">
+                <h2 class="detail__title">Solar &amp; Wind Energy Harvester</h2>
+                <p class="detail__desc">
+                  A small-scale energy rig pulling power from both solar and a homemade wind
+                  turbine — the turbine built from a cereal box — generating around 3.7V.
+                  Outputs feed a capacitor circuit that stores and smooths the generated DC.
+                  A scrappy, hands-on energy-harvesting experiment.
+                </p>
+                <p class="detail__impact">Harvesting and storing DC from two renewable sources</p>
+                <div class="detail__tags">
                   <span>Energy Harvesting</span>
                   <span>Solar</span>
                   <span>Wind</span>
@@ -149,120 +120,109 @@
                 </div>
               </div>
             </div>
+          </article>
 
-          </div>
-        </div>
-
-        <div class="projects-page__group">
-          <div class="section-header">
-            <span class="section-index">04 //</span>
-            <h2 class="section-title">Software</h2>
-            <div class="section-line"></div>
-          </div>
-          <div class="projects__grid">
-
-            <div class="project-card project-card--full">
-              <div class="project-card__img">
+          <!-- DETAIL 03 -->
+          <article class="detail">
+            <div class="detail__strip">
+              <b>DETAIL 03 · SOFTWARE</b>
+              <span>MAR 2026 · SHIPPED IN 24H</span>
+            </div>
+            <div class="detail__body">
+              <figure class="detail__fig">
                 <img src="images/proj-eliteclub.png" alt="Browser window showing an AI-powered resume platform" />
-              </div>
-              <div class="project-card__content">
-                <div class="project-card__meta">
-                  <span class="project-tag">SOFTWARE</span>
-                  <span class="project-year">Mar 2026</span>
-                </div>
-                <h3>TheEliteClub <span class="project-card__hackathon">HooHacks</span></h3>
-                <p>AI-driven resume platform built to simplify creating and improving resumes. Users can generate resumes from scratch or analyze existing ones, with feedback and job description comparisons to align with real opportunities. Combines modern web tech with AI and real-world labor data for smarter, more competitive resumes.</p>
-                <p class="project-card__impact">Built and shipped in 24 hours at HooHacks 2026.</p>
-                <div class="project-card__tags">
+                <figcaption>FIG. 3 — PLATFORM UI · AS SHIPPED</figcaption>
+              </figure>
+              <div class="detail__content">
+                <h2 class="detail__title">TheEliteClub <small>HOOHACKS 2026</small></h2>
+                <p class="detail__desc">
+                  AI-driven resume platform built to simplify creating and improving resumes.
+                  Users can generate resumes from scratch or analyze existing ones, with
+                  feedback and job description comparisons to align with real opportunities.
+                  Combines modern web tech with AI and real-world labor data.
+                </p>
+                <p class="detail__impact">Built and shipped in 24 hours at HooHacks 2026</p>
+                <div class="detail__tags">
                   <span>Next.js</span>
                   <span>TypeScript</span>
                   <span>REST APIs</span>
                   <span>Auth0</span>
                   <span>Gemini AI</span>
                 </div>
-                <div class="project-card__links">
-                  <a href="https://www.youarenowintheeliteemployee.club/" target="_blank" class="project-card__link">
-                    Visit Site <i class="fas fa-arrow-right"></i>
-                  </a>
-                  <a href="https://github.com/AyeMilk" target="_blank" class="project-card__link project-card__link--ghost">
-                    <i class="fab fa-github"></i> GitHub
-                  </a>
+                <div class="detail__links">
+                  <a href="https://www.youarenowintheeliteemployee.club/" target="_blank" rel="noopener" class="btn btn--primary">Visit Site →</a>
+                  <a href="https://github.com/AyeMilk" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
                 </div>
               </div>
             </div>
+          </article>
 
-          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- TITLE BLOCK FOOTER -->
+      <footer class="titleblock">
+        <dl class="tb-cell">
+          <dt>Project</dt>
+          <dd>PERSONAL DOMAIN — JASONREYES.CC</dd>
+        </dl>
+        <dl class="tb-cell">
+          <dt>Contact</dt>
+          <dd>
+            <a href="mailto:jasonbenitez9958@gmail.com">EMAIL</a> ·
+            <a href="https://www.linkedin.com/in/jason-reyess" target="_blank" rel="noopener">LINKEDIN</a> ·
+            <a href="https://github.com/AyeMilk" target="_blank" rel="noopener">GITHUB</a> ·
+            <a href="https://discord.com/users/729493119288213605" target="_blank" rel="noopener">DISCORD</a>
+          </dd>
+        </dl>
+        <dl class="tb-cell">
+          <dt>Drawn by</dt>
+          <dd>J. REYES · FAIRFAX, VA</dd>
+        </dl>
+        <dl class="tb-cell">
+          <dt>Scale</dt>
+          <dd>N.T.S.</dd>
+        </dl>
+        <dl class="tb-cell">
+          <dt>Sheet</dt>
+          <dd>E-301 · REV 04</dd>
+        </dl>
+      </footer>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__bottom">
-          <p class="footer__copyright">&copy; Jason Reyes <span id="year"></span></p>
-          <div class="footer__socials">
-            <a href="https://github.com/AyeMilk" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jason-reyess" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://discord.com/users/729493119288213605" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
-            <a href="mailto:jasonbenitez9958@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          </div>
+    <!-- RFI MODAL -->
+    <div class="rfi" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="rfi-title">
+      <div class="rfi__box">
+        <button class="rfi__close" id="contact-modal-close" aria-label="Close">×</button>
+        <div class="rfi__head">
+          <h2 id="rfi-title">Request for Information</h2>
+          <span>RFI-001</span>
         </div>
-      </div>
-    </footer>
-
-    <!-- CONTACT MODAL -->
-    <div class="contact-modal" id="contact-modal">
-      <div class="contact-modal__box">
-        <button class="contact-modal__close" id="contact-modal-close" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="contact-modal__header">
-          <span class="contact-modal__label">get in touch</span>
-          <h2>Contact</h2>
-        </div>
-        <div class="contact-modal__links">
-          <a href="mailto:jasonbenitez9958@gmail.com" class="contact-modal__item">
-            <span class="contact-modal__icon"><i class="fas fa-envelope"></i></span>
-            <div>
-              <span class="contact-modal__item-label">Email</span>
-              <span class="contact-modal__item-value">jasonbenitez9958@gmail.com</span>
-            </div>
-            <i class="fas fa-arrow-right contact-modal__arrow"></i>
+        <div class="rfi__links">
+          <a href="mailto:jasonbenitez9958@gmail.com" class="rfi__item">
+            <span class="rfi__item-ch">CH-01 · EMAIL</span>
+            <span class="rfi__item-value">jasonbenitez9958@gmail.com</span>
+            <span class="rfi__item-arrow">→</span>
           </a>
-          <a href="https://www.linkedin.com/in/jason-reyess" target="_blank" class="contact-modal__item">
-            <span class="contact-modal__icon contact-modal__icon--blue"><i class="fab fa-linkedin"></i></span>
-            <div>
-              <span class="contact-modal__item-label">LinkedIn</span>
-              <span class="contact-modal__item-value">Jason Reyes</span>
-            </div>
-            <i class="fas fa-arrow-right contact-modal__arrow"></i>
+          <a href="https://www.linkedin.com/in/jason-reyess" target="_blank" rel="noopener" class="rfi__item">
+            <span class="rfi__item-ch">CH-02 · LNKD</span>
+            <span class="rfi__item-value">in/jason-reyess</span>
+            <span class="rfi__item-arrow">→</span>
           </a>
-          <a href="https://github.com/AyeMilk" target="_blank" class="contact-modal__item">
-            <span class="contact-modal__icon contact-modal__icon--purple"><i class="fab fa-github"></i></span>
-            <div>
-              <span class="contact-modal__item-label">GitHub</span>
-              <span class="contact-modal__item-value">AyeMilk</span>
-            </div>
-            <i class="fas fa-arrow-right contact-modal__arrow"></i>
+          <a href="https://github.com/AyeMilk" target="_blank" rel="noopener" class="rfi__item">
+            <span class="rfi__item-ch">CH-03 · GIT</span>
+            <span class="rfi__item-value">github.com/AyeMilk</span>
+            <span class="rfi__item-arrow">→</span>
           </a>
-          <a href="https://discord.com/users/729493119288213605" target="_blank" class="contact-modal__item">
-            <span class="contact-modal__icon contact-modal__icon--discord"><i class="fab fa-discord"></i></span>
-            <div>
-              <span class="contact-modal__item-label">Discord</span>
-              <span class="contact-modal__item-value">User ID: 729493119288213605</span>
-            </div>
-            <i class="fas fa-arrow-right contact-modal__arrow"></i>
+          <a href="https://discord.com/users/729493119288213605" target="_blank" rel="noopener" class="rfi__item">
+            <span class="rfi__item-ch">CH-04 · DSCD</span>
+            <span class="rfi__item-value">Discord DM</span>
+            <span class="rfi__item-arrow">→</span>
           </a>
         </div>
       </div>
     </div>
 
     <script src="js/app.js"></script>
-    <script>
-      const yearSpan = document.getElementById("year");
-      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
